@@ -146,10 +146,10 @@ will be disabled and/or hidden in the UI.
             try {
               configuredBaseHostname = url.parse(sails.config.custom.baseUrl).host;
             } catch (unusedErr) { /*…*/}
-            if ((sails.config.environment === 'staging' || sails.config.environment === 'production') && !req.isSocket && req.method === 'GET' && req.hostname !== configuredBaseHostname) {
-              sails.log.info('Redirecting GET request from `'+req.hostname+'` to configured expected host (`'+configuredBaseHostname+'`)...');
-              return res.redirect(sails.config.custom.baseUrl+req.url);
-            }//•
+            // if ((sails.config.environment === 'staging' || sails.config.environment === 'production') && !req.isSocket && req.method === 'GET' && req.hostname !== configuredBaseHostname) {
+            //   sails.log.info('Redirecting GET request from `'+req.hostname+'` to configured expected host (`'+configuredBaseHostname+'`)...');
+            //   return res.redirect(sails.config.custom.baseUrl+req.url);
+            // }//•
 
             // No session? Proceed as usual.
             // (e.g. request for a static asset)
