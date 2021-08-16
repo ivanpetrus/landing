@@ -55,7 +55,8 @@ module.exports = function(grunt) {
   //
   // ```
   // // Load Grunt plugin from the node_modules/ folder.
-  // grunt.loadNpmTasks('grunt-hash');
+  console.log('grunt-hash');
+   grunt.loadNpmTasks('grunt-hash');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

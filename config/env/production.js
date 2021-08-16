@@ -252,7 +252,7 @@ module.exports = {
     ***************************************************************************/
     onlyAllowOrigins: [
       'https://ipland.herokuapp.com',
-      'https://staging.example.com',
+      'http://localhost:1337',
     ],
 
 
